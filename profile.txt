@@ -1,0 +1,29 @@
+### DB_CONFIG
+DB_CONNECT_TYPE     'mysql'
+DB_USER             'root'
+DB_PASSWORD         'root'
+DB_NAME             'Crawler'
+DB_IP               '110.64.69.104'
+DB_PORT             '3306'
+DB_CHARDET          'utf-8'
+
+### CONNECT_CONFIG
+TIME_OUT            5
+RETRY_TIME          3
+CHECK_IP            'https://httpbin.org/get'
+TEST_HTTP_HEADER    'http://httpbin.org/get'
+TEST_HTTP_HEADERS   'https://httpbin.org/get'
+
+### DEFAULT_CONFIG
+DEFAULT_SCORE       20
+
+### CRAWLER_CONFIG
+CRAWLER_CLASS_NUM   1
+CRAWLER_URL_1       '['http://www.xicidaili.com/%s/%s' % (m, n) for m in ['nn', 'nt', 'wn', 'wt'] for n in range(1, 8)]'
+CRAWLER_TYPE_1      'xpath'
+CRAWLER_PATTERN_1   './/*[@id='ip_list']/tr[position()>1]'
+CRAWLER_POSITION_1  '{'ip': './td[2]', 'port': './td[3]', 'type': './td[5]', 'protocol': './td[6]'}'
+
+### RUNTIME_CONFIG
+
+
